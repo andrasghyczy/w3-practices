@@ -1,6 +1,40 @@
-body{
+body,
+body *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #e6f598;
+    z-index: 100;
+}
+
+#logo,
+header nav {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+}
+
+header nav a {
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
+header nav button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    top: 0;
+    background-color: #66c2a5;
 }
 
 body > div {
